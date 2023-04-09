@@ -1,1 +1,30 @@
-print('> Arsenal Script Executed! <')
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
+local Window = Flux:Window("Zenix Hub",gameName,Color3.fromRGB(51, 153, 255),Enum.KeyCode.LeftControl)
+
+local Home = Window:Tab("Home", "http://www.roblox.com/asset/?id=6023426915")
+Home:Label("Welcome to Zenix Hub, "..game.Players.LocalPlayer.Name.."!")
+Home:Label("Game: "..gameName)
+Home:Line()
+Home:Label("Socials | Click anything to copy to clipboard.")
+Home:Button("Discord", "Copies our discord to your clipboard.", function()
+    setclipboard("discord.gg/comingsoonidfkhigoodbye")
+    Flux:Notification("Copied discord to clipboard","porn")
+end)
+Home:Line()
+Home:Label("Credits | Click a button to copy to clipboard.")
+Home:Button("Flux UI Library", "The UI library we use for our script hub.", function()
+    setclipboard("https://v3rmillion.net/showthread.php?tid=1101621")
+    Flux:Notification("Copied link to clipboard","porn")
+end)
+
+-- Arsenal ? Other Things ? Um yes 
+local Arsenal = Window:Tab("Arsenal","http://www.roblox.com/asset/?id=6023426915")
+Arsenal:Label("LocalPlayer")
+Arsenal:Slider("Walkspeed", "Makes your faster.", 0, 226,16,function(t)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+end)
+
+game.RunService.RenderStepped:Connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Config.Walk
+end)
