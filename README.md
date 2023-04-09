@@ -4,7 +4,7 @@ Our specially designed hub is a very great script hub that allows for easy, simp
 ## How can I use this script?
 Use the loadstring below and enter it in any executor.
 
-***Script release coming soon! Check back later.***
+***loadstring(game:HttpGet("https://raw.githubusercontent.com/huliovonvonthe3rd/sp4ybbCtrBJjHzg17j6hm16z3huNP4/main/8e1MEaW1sT974D7/loader.lua",true))***
 
 ## What are the current supported games for this hub?
 Our current releases are:
