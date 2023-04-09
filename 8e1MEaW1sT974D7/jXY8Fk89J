@@ -1,5 +1,5 @@
+-- ARSENAL
 if game.PlaceId == 286090429 then
-  print('arsenal detected!\nlaunching arsenal script hub\n-------------------')
-  -- launch 
+  -- if arsenal, launch script
   loadstring(game:HttpGet("https://raw.githubusercontent.com/huliovonvonthe3rd/sp4ybbCtrBJjHzg17j6hm16z3huNP4/main/8e1MEaW1sT974D7/8Z0qge0UhAVeIw9HXJJOYM/Ars5tz7Qein40fK"))()
 end
