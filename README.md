@@ -3,7 +3,7 @@ Our specially designed hub is a very great script hub that allows for easy, simp
 
 # How can I use this script?
 Use the loadstring below.
-**Releases soon.
+*Releases soon.
 
 # What are the current supported games for this hub?
 Our current releases are:
